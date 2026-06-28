@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Link Media Sosial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #121212; /* Warna latar belakang gelap (Dark Mode) */
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            background-attachment: fixed;
             color: white;
             margin: 0;
             padding: 20px;
@@ -16,36 +22,40 @@
         }
         .container {
             width: 100%;
-            max-width: 400px; /* Membatasi lebar agar pas di layar HP */
+            max-width: 400px;
             text-align: center;
             margin-top: 40px;
         }
         .foto-profil {
             width: 100px;
             height: 100px;
-            background: #555;
-            border-radius: 50%; /* Membuat gambar jadi bulat */
+            border-radius: 50%;
             margin: 0 auto 15px auto;
+            object-fit: cover; /* Agar foto tidak gepeng */
         }
         h1 { font-size: 24px; margin-bottom: 5px; }
         p { color: #aaa; font-size: 14px; margin-bottom: 30px; }
         
-        /* Gaya untuk Tombol Link */
         .tombol-link {
             display: block;
             background: #ffffff;
             color: #121212;
-            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            text-decoration: none;
             padding: 15px;
             margin-bottom: 15px;
             border-radius: 25px;
             font-weight: bold;
-            transition: 0.3s; /* Efek halus saat tombol disentuh/diklik */
+            transition: 0.3s;
+            /* KODE BARU: Memberikan bayangan halus awal pada tombol */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
-        /* Efek saat kursor mouse berada di atas tombol */
         .tombol-link:hover {
             background: #00adb5;
             color: white;
+            /* KODE BARU: Membuat tombol agak naik ke atas */
+            transform: translateY(-3px); 
+            /* KODE BARU: Membuat bayangan di bawah tombol jadi lebih tebal & menyebar saat melayang */
+            box-shadow: 0 8px 25px rgba(0, 173, 181, 0.4); 
         }
     </style>
 </head>
@@ -53,16 +63,14 @@
 
     <div class="container">
         <img src="https://picsum.photos/100" class="foto-profil" alt="Foto Profil">
-		
         
         <h1>Nama Kamu / Nama Bisnis</h1>
         <p>Tuliskan deskripsi singkat atau sloganmu di sini.</p>
 
-        <a href="toko_online.html" class="tombol-link" target="_blank">Kunjungi Toko Online</a>
-        <a href="https://wa.me/6285222222221" class="tombol-link" target="_blank">Hubungi via WhatsApp</a>
+        <a href="https://www.instagram.com/" class="tombol-link" target="_blank">Kunjungi Toko Online</a>
+        <a href="https://wa.me/628123456789" class="tombol-link" target="_blank">Hubungi via WhatsApp</a>
         <a href="https://www.youtube.com" class="tombol-link" target="_blank">Lihat Katalog Video</a>
     </div>
 
 </body>
 </html>
-

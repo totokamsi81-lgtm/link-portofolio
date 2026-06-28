@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Link Media Sosial</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #121212; /* Warna latar belakang gelap (Dark Mode) */
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px; /* Membatasi lebar agar pas di layar HP */
+            text-align: center;
+            margin-top: 40px;
+        }
+        .foto-profil {
+            width: 100px;
+            height: 100px;
+            background: #555;
+            border-radius: 50%; /* Membuat gambar jadi bulat */
+            margin: 0 auto 15px auto;
+        }
+        h1 { font-size: 24px; margin-bottom: 5px; }
+        p { color: #aaa; font-size: 14px; margin-bottom: 30px; }
+        
+        /* Gaya untuk Tombol Link */
+        .tombol-link {
+            display: block;
+            background: #ffffff;
+            color: #121212;
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s; /* Efek halus saat tombol disentuh/diklik */
+        }
+        /* Efek saat kursor mouse berada di atas tombol */
+        .tombol-link:hover {
+            background: #00adb5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://picsum.photos/100" class="foto-profil" alt="Foto Profil">
+		
+        
+        <h1>Nama Kamu / Nama Bisnis</h1>
+        <p>Tuliskan deskripsi singkat atau sloganmu di sini.</p>
+
+        <a href="toko_online.html" class="tombol-link" target="_blank">Kunjungi Toko Online</a>
+        <a href="https://wa.me/6285222222221" class="tombol-link" target="_blank">Hubungi via WhatsApp</a>
+        <a href="https://www.youtube.com" class="tombol-link" target="_blank">Lihat Katalog Video</a>
+    </div>
+
+</body>
+</html>
+
